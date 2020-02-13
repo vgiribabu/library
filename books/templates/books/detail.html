@@ -1,0 +1,6 @@
+{% if check %}
+book name: {{check.book_name}}<br>
+author:{{check.author}}<br>
+description:{{check.description}}<br>
+{% endif %}
+<a href="{% url 'books:index' %}"><b>Back</b></a>

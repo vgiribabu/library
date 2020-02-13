@@ -1,0 +1,10 @@
+<h1><B>BOOKS</B></h1>
+
+{% if lib %}
+    {% for i in lib %}
+<a href="{% url 'books:detail' i.id %}">{{i.book_name}}</a><br>
+    {% endfor %}
+{% else %}
+<p>there is no books plzz add books</p>
+{% endif %}
+<a href="{% url 'books:create' %}">Create book</a>
